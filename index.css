@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A2647;
+}
+
+nav{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       background-color: #5C5470;
+       box-shadow: inset 0 0 10px #000000 ;
+       border-radius: 15px;
+       margin: 10px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(49, 37, 37);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: white;
+}
+
+ul li:hover{
+    background-color: #0A2647;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+
+.logo-container img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.login{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17px;
+
+}
+.login button{
+    padding: 10px;
+    border: none;
+    background-color: #0A2647;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.container{
+
+   height: 80vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 10px; 
+}
+.container .left{
+    width: 150px;
+    height: 80vh;
+    background-color: #5C5470;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #000000 ;
+}
+.container .right{
+    width: calc(100% - 150px);
+    height: 80vh;
+    background-color: #5C5470;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #000000 ;
+}
+
+.hem-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    display: none;
+}
+
+.hem-menu .line{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+}
+
+
+@media screen and (max-width: 456px){
+    nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    ul{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .hem-menu{
+        display: flex;
+    }
+}
